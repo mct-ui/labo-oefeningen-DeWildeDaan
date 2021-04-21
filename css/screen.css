@@ -432,7 +432,8 @@ a:focus {
 .is-selected,
 .c-nav__link:hover,
 .c-nav__link:focus {
-	color: #5051db;
+	color: #DBEDFF;
+    text-shadow: 0 0 30px #8EC7FF;
 }
 
 @media (min-width: 768px) {
