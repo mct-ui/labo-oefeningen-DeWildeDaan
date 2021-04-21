@@ -34,10 +34,10 @@ html {
 	font-size: 18px;
 	line-height: 32px;
 	font-weight: 200;
-    color: #FFFFFF;
-    background-color: #0A257D;
-    background-image: linear-gradient(315deg, #061649 0%, #0A257D 100%);
-    background-attachment: fixed;
+	color: #ffffff;
+	background-color: #0a257d;
+	background-image: linear-gradient(315deg, #061649 0%, #0a257d 100%);
+	background-attachment: fixed;
 	font-family: 'clear_sans', Helvetica, arial, sans-serif;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
@@ -49,7 +49,6 @@ html {
 *:after {
 	box-sizing: inherit;
 }
-
 
 /*
  * Remove text-shadow in selection highlight:
@@ -412,13 +411,13 @@ a:focus {
 .c-nav {
 	font-size: 13px;
 	line-height: 17px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .c-nav__link {
 	text-decoration: none;
-	font-weight: 200;
+	font-weight: 400;
 	padding: 8px 0;
 	display: block;
 }
@@ -426,14 +425,14 @@ a:focus {
 .c-nav__link,
 .c-nav__link:visited,
 .c-nav__link:active {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 .is-selected,
 .c-nav__link:hover,
 .c-nav__link:focus {
-	color: #DBEDFF;
-    text-shadow: 0 0 30px #8EC7FF;
+	color: #dbedff;
+	text-shadow: 0 0 30px #8ec7ff;
 }
 
 @media (min-width: 768px) {
@@ -469,6 +468,33 @@ a:focus {
 	.c-header__nav {
 		display: block;
 	}
+}
+
+/*
+    Component: CTA button
+    ---
+    CTA buttons of the website
+*/
+
+.c-cta {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 20px 32px;
+	transition: 0.5s;
+	background-image: linear-gradient(to right, #0053fb 0%, #033aa7 51%, #0053fb 100%);
+	background-size: 200% auto;
+	box-shadow: 0 0 10px rgba(17, 194, 255, 0.3);
+	border: 1px rgba(142, 199, 255, 0.2);
+}
+
+.c-cta:hover {
+	background-position: right center; /* change the direction of the change here */
 }
 
 /*------------------------------------*\
